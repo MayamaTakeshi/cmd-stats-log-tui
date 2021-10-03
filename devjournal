@@ -5,3 +5,5 @@ Follow:
   https://www.softprayog.in/programming/creating-processes-with-fork-and-exec-in-linux
 
   http://www.microhowto.info/howto/capture_the_output_of_a_child_process_in_c.html
+
+The code in research/parent_child.c works (Solution 3 from https://www.codeproject.com/Questions/746339/two-way-communication-between-child-and-parent-pro)
