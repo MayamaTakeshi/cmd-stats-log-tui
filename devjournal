@@ -7,3 +7,19 @@ Follow:
   http://www.microhowto.info/howto/capture_the_output_of_a_child_process_in_c.html
 
 The code in research/parent_child.c works (Solution 3 from https://www.codeproject.com/Questions/746339/two-way-communication-between-child-and-parent-pro)
+
+-------------------------------------------------------------
+2021/10/03 takeshi:
+
+Protocol spec from child to parent:
+  2 bytes: length of message payload
+  1 byte: message type (command_description, stats_description, stats, log)
+  XX bytes: payload
+  
+message types:
+  - command_description (semi-colon separated string)
+  - stats_description (semi-colon separated string)
+  - stats (array of uint_64 (one for each command)
+  - log (string)
+
+
